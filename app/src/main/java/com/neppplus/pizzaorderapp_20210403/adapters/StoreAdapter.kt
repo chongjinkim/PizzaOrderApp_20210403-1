@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import com.neppplus.pizzaorderapp_20210403.R
 import com.neppplus.pizzaorderapp_20210403.datas.Store
 
-class PizzaStoreAdapter(
+class StoreAdapter(
         val mContext : Context,
         val resId : Int,
         val mList : ArrayList<Store>) : ArrayAdapter<Store>(mContext, resId, mList) {
