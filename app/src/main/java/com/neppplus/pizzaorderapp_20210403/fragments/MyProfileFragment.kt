@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.fragment_my_profile.*
 
 class MyProfileFragment : Fragment() {
 
+//    닉네임을 가지러 간다는 구별을 하기 위한 고유 숫자
+
     val REQUEST_FOR_NICKNAME = 1564
 
     override fun onCreateView(
@@ -27,6 +29,9 @@ class MyProfileFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
 
         editNicknameBtn.setOnClickListener {
+
+//            닉네임을 받아오기 위한 별도의 행동
+//            startActivityForResult
 
             val myIntent = Intent(activity, EditNicknameActivity::class.java)
             startActivityForResult(myIntent, REQUEST_FOR_NICKNAME)
