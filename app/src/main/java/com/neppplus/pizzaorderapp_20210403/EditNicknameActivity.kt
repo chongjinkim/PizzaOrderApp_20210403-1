@@ -1,7 +1,10 @@
 package com.neppplus.pizzaorderapp_20210403
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_edit_nickname.*
 
 class EditNicknameActivity : BaseActivity() {
 
@@ -13,6 +16,16 @@ class EditNicknameActivity : BaseActivity() {
     }
 
     override fun setupEvents() {
+
+        okBtn.setOnClickListener {
+
+            val inputNick = newNicknameEdt.text.toString()
+            val resultIntent = Intent()
+            resultIntent.putExtra("nick", inputNick)
+            setResult(Activity.RESULT_OK, resultIntent)
+            finish()
+
+        }
 
     }
 

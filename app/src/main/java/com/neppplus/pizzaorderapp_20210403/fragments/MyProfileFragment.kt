@@ -6,10 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.neppplus.pizzaorderapp_20210403.EditNicknameActivity
 import com.neppplus.pizzaorderapp_20210403.R
 import kotlinx.android.synthetic.main.fragment_my_profile.*
 
 class MyProfileFragment : Fragment() {
+
+    val REQUEST_FOR_NICKNAME = 1564
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -24,7 +27,8 @@ class MyProfileFragment : Fragment() {
 
         editNicknameBtn.setOnClickListener {
 
-//            val myIntent = Intent(activity, ??)
+            val myIntent = Intent(activity, EditNicknameActivity::class.java)
+            startActivityForResult(myIntent, REQUEST_FOR_NICKNAME)
 
         }
 
