@@ -15,15 +15,21 @@ class EditNicknameActivity : BaseActivity() {
         setValues()
     }
 
+    //이벤트 처리이기 때문에 setUpEvents에 작성
     override fun setupEvents() {
 
         okBtn.setOnClickListener {
 
-            val inputNick = newNicknameEdt.text.toString()
-            val resultIntent = Intent()
-            resultIntent.putExtra("nick", inputNick)
-            setResult(Activity.RESULT_OK, resultIntent)
-            finish()
+            //문자열 생성 - 입력할시 문자열
+         val inputNew = newNicknameEdt.text.toString()
+
+         val resultIntent = Intent()
+
+         resultIntent.putExtra("new", inputNew)
+
+         setResult(Activity.RESULT_OK, resultIntent)
+
+         finish()
 
         }
 

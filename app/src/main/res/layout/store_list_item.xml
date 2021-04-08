@@ -11,6 +11,8 @@
         android:padding="10dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
+<!--CircleImageView github아이템을 이용한다. 레이아웃 완성 아이디 부여-->
+<!--TextView 를 하나 배치를 하고 난 다음에 데이터 클래스 생성 준비 id값 각각 부여 -->
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/logoImg"

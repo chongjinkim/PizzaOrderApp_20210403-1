@@ -5,6 +5,8 @@
     android:orientation="vertical"
     android:gravity="center">
 
+<!--우선 fragment용 레이 아웃을 하나 만든 뒤에 ,fragment 패키지를 추가하는 과정 진행 'fragments'라는 폴더를 만든다.-->
+<!--해당 작업 진행 뒤 우선 ui에 ListView를 하나 배치를 하고 난 다음에 layout에다가 .._list_item으로 파일 저장  -->
     <ListView
         android:id="@+id/pizzaStoreListView"
         android:layout_width="match_parent"

@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!--    Tab layout 구현, gradle에서 implementation 'com.google.android.material:material:1.3.0 있는지 우선찾음 -->
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/mainTabLayout"
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         app:tabSelectedTextColor="#000000"
         app:tabIndicatorColor="#000000"/>
 
+    <!--ViewPager xml을 그다음에 배치한다-->
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mainViewPager"
         android:layout_width="match_parent"
